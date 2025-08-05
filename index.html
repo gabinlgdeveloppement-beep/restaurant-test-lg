@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Restaurant TEST LG - Restauration de luxe.">
+    <title>Restaurant TEST LG</title>
+    <link rel="stylesheet" href="assets/style.css" />
+    <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
+    <script src="https://cdn.jsdelivr.net/npm/scrollreveal"></script>
+</head>
+<body>
+    <header>
+        <h1>Restaurant TEST LG</h1>
+        <nav>
+            <ul>
+                <li><a href="fr/index.html">FR</a></li>
+                <li><a href="en/index.html">EN</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="hero reveal">
+            <h2>Bienvenue dans l'excellence culinaire</h2>
+            <p>Une expérience gastronomique inoubliable au cœur de votre ville.</p>
+        </section>
+
+        <section class="gallery reveal">
+            <h3>Galerie</h3>
+            <div class="gallery-grid">
+                <img src="https://via.placeholder.com/300x200" alt="Plat 1" />
+                <img src="https://via.placeholder.com/300x200" alt="Plat 2" />
+                <img src="https://via.placeholder.com/300x200" alt="Salle" />
+            </div>
+        </section>
+
+        <section class="map reveal">
+            <h3>Où nous trouver</h3>
+            <iframe
+                src="https://www.google.com/maps?q=2+rue+du+Chacore,+cons-la-grandville&output=embed"
+                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+            </iframe>
+        </section>
+
+        <section class="reservation reveal">
+            <h3>Réserver une table</h3>
+            <form action="mailto:contact@restauranttestlg.com" method="POST" enctype="text/plain">
+                <input type="text" name="Nom" placeholder="Votre nom" required />
+                <input type="email" name="Email" placeholder="Votre email" required />
+                <input type="datetime-local" name="Date" required />
+                <textarea name="Message" placeholder="Message ou demande spéciale"></textarea>
+                <button type="submit">Réserver</button>
+            </form>
+        </section>
+
+        <section class="contact reveal">
+            <h3>Contactez-nous</h3>
+            <p>Email : contact@restauranttestlg.com</p>
+            <p>Téléphone : +33 1 23 45 67 89</p>
+            <p>Adresse : 2 rue du Chacore, 54870 Cons-la-Grandville</p>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Restaurant TEST LG. Tous droits réservés.</p>
+        <div id="chatbot">
+            <p>Vous avez une question ? Chattez avec nous !</p>
+            <iframe src="https://www.chatbase.co/chatbot-iframe/YOUR_CHATBOT_ID" width="100%" height="300" style="border:none;"></iframe>
+        </div>
+    </footer>
+    <script>
+        ScrollReveal().reveal('.reveal', { distance: '50px', duration: 1000, easing: 'ease-in-out', origin: 'bottom' });
+    </script>
+</body>
+</html>
